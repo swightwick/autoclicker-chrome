@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "DL Autoclicker",
+	"description": "Clicks a link with a keyword you specify",
+	"version": "1.0",
+	"author": "@samwightwick",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
